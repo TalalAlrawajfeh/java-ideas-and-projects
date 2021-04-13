@@ -1,0 +1,9 @@
+sales-manager.iml
+.idea
+.idea/*
+.idea/**
+.idea/**/*
+target
+target/*
+target/**
+target/**/*

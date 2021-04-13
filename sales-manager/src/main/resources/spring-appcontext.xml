@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="loginUseCase" class="interactors.LoginUseCase"/>
+    <bean id="listAllProductsUseCase" class="interactors.ListAllProductsUseCase"/>
+    <bean id="listAllReceiptsUseCase" class="interactors.ListAllReceiptsUseCase"/>
+    <bean id="addProductUseCase" class="interactors.AddProductUseCase"/>
+    <bean id="addReceiptUseCase" class="interactors.AddReceiptUseCase"/>
+    <bean id="deleteProductUseCase" class="interactors.DeleteProductUseCase"/>
+    <bean id="deleteReceiptUseCase" class="interactors.DeleteReceiptUseCase"/>
+    <bean id="editProductUseCase" class="interactors.EditProductUseCase"/>
+    <bean id="listReceiptsUseCase" class="interactors.ListReceiptsUseCase"/>
+    <bean id="listProductsUseCase" class="interactors.ListProductsUseCase"/>
+    <bean id="getProductUseCase" class="interactors.GetProductUseCase"/>
+    <bean id="editReceiptUseCase" class="interactors.EditReceiptUseCase"/>
+
+    <bean id="firstTimeUser" class="initializers.FirstTimeAdminInitializer" init-method="init"/>
+</beans>

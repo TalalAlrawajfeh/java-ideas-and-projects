@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+  tomcat:
+    image: sales-manager-tomcat
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql/mysql-server
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
